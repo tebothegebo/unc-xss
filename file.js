@@ -6,7 +6,7 @@ win.document.body.style.margin = '0';
 win.document.body.style.height = '100vh';
 
 // 3. Fetch the HTML file content
-fetch("https://raw.githubusercontent.com/tebothegebo/unc-xss/refs/heads/main/eagler.js")
+fetch("https://github.com/3kh0/eaglercraft-builds/raw/refs/heads/main/EaglercraftX_1.8_Offline_International.html")
   .then(response => {
     // Check if the network request was successful
     if (!response.ok) {
