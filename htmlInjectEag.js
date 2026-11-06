@@ -12,7 +12,7 @@ document.body.appendChild(button);
 button.addEventListener('click', async function() {
   if (fileUpload.files && fileUpload.files[0]) {
     // Clear DOM
-    document.textContent = "";
+    document.body.innerHTML = "";
     
     // Make div for the place
     var div = document.createElement('div');
